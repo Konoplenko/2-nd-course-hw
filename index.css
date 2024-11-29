@@ -42,11 +42,15 @@ header {
     margin-bottom: 48px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .but{
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
-    background-color: black;
+    background: black;
     color: white;  
     width: 247px;
     height: 66px;   
@@ -64,6 +68,7 @@ header {
 
 .but:hover{
     background: rgb(254, 254, 254); 
+    color: black;
 }
 
 .block{
@@ -98,8 +103,7 @@ header {
     gap: 32px;
 }
 
-a{
-    text-decoration: none;
+.cart{
     border-radius: 30px;
     background-color: white;
     max-width: 378px;
@@ -107,7 +111,7 @@ a{
     transition: transform 0.3s ease;
 }
 
-a:hover{
+.cart:hover{
     transform: scale(1.05);
 }
 
