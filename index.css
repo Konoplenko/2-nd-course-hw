@@ -95,6 +95,7 @@ a {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
+  max-width: 788px;
   color: white;
   margin-top: 24px;
   margin-bottom: 72px;
@@ -144,6 +145,60 @@ a {
   line-height: 39px;
   color: black;
   margin-top: 16px;
+}
+
+.mini-game {
+  background: rgb(32, 32, 39);
+  padding-bottom: 144px;
+  background-image: url("./img/star5.png"), url("./img/star6.png");
+  background-position: calc(100% - 45px) 93px, calc(100% - 93px) calc(100% - 45px);
+  background-repeat: no-repeat;
+}
+
+.title-pos {
+  padding-top: 46px;
+  margin-bottom: 72px;
+}
+
+.card-game {
+  border-radius: 30px;
+  background-color: white;
+}
+
+.card-game__pos {
+  display: flex;
+}
+
+.card-game:nth-child(odd) .card-game__pos {
+  flex-direction: row-reverse;
+}
+
+picture img {
+  height: 100%;
+  width: 100%;
+}
+
+.pos-mini-game {
+  padding: 48px 48px;
+  flex-grow: 1;
+}
+
+.name-big {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.pos-text {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 36px;
+  max-width: 457px;
+  color: black;
 }
 
 footer {
