@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Montserrat";
+}
+
+header {
+    height: 800px;
+    background: rgb(225, 255, 143);
+}
+
+.heading {
+    padding-top: 196px;
+    padding-bottom: 448px;
+    background-image: url('./img/star1.png'), url('./img/star2.png'), url('./img/star3.png');
+    background-position: 63px 69px, 100% 0, calc(100% - 344px) calc(100% - 149px);
+    background-repeat: no-repeat;
+}
+
+.content {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.privet{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    width: 768px;
+    margin-bottom: 24px;
+}
+
+.text{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 720px;
+    margin-bottom: 48px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.but{
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: black;
+    color: white;  
+    width: 247px;
+    height: 66px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.but:hover{
+    background: rgb(254, 254, 254); 
+    color: black;
+}
+
+.block{
+    background: rgb(32, 32, 39);
+    padding-bottom: 50px;
+    background-image: url('./img/star4.png');
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+}
+
+.title{
+    padding-top: 94px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    color: white;
+}
+
+.prod-mini{
+    gap: 32px;
+    display: grid;
+}
+
+.text-block{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 72px;
+}
+
+.prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.cart{
+    border-radius: 30px;
+    background-color: white;
+    max-width: 378px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.cart:hover{
+    transform: scale(1.05);
+}
+
+.pos-game{
+    padding: 32px 32px 36px 32px;
+}
+
+.number{
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    width: 108px;
+    height: 36px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    padding: 8px 16px 10px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    color: black;
+    margin-top: 16px;
+}
+
+footer {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    height: 150px;
+    background: #BCEC30;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+@import 'gamemobile';
