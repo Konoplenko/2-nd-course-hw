@@ -142,7 +142,7 @@ a {
   margin-top: 16px;
 }
 
-.mini-game {
+.mini-games {
   background: rgb(32, 32, 39);
   padding-bottom: 144px;
   background-image: url("./img/star5.png"), url("./img/star6.png");
@@ -150,26 +150,26 @@ a {
   background-repeat: no-repeat;
 }
 
-.mini-game__title {
+.mini-games__title {
   padding-top: 46px;
   margin-bottom: 72px;
 }
 
-.mini-game-block {
+.mini-games__block {
   gap: 32px;
   display: grid;
 }
 
-.mini-game-link {
+.mini-games__link {
   border-radius: 30px;
   background-color: white;
 }
 
-.mini-game-link__position {
+.mini-games__position {
   display: flex;
 }
 
-.mini-game-link:nth-child(odd) .mini-game-link__position {
+.mini-games__link:nth-child(odd) .mini-games__position {
   flex-direction: row-reverse;
 }
 
@@ -178,12 +178,12 @@ picture img {
   width: 100%;
 }
 
-.mini-game-description {
+.mini-games__description {
   padding: 48px 48px;
   flex-grow: 1;
 }
 
-.mini-game-description__name-big {
+.mini-games__name-big {
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
@@ -191,7 +191,7 @@ picture img {
   margin-bottom: 24px;
 }
 
-.mini-game-description__text {
+.mini-games__text {
   text-decoration: none;
   font-size: 24px;
   font-weight: 400;
