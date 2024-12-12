@@ -262,7 +262,7 @@ footer {
   .about {
     display: none;
   }
-  .mini-game {
+  .mini-games {
     padding-bottom: 49px;
     background-image: none;
   }
@@ -271,40 +271,40 @@ footer {
     font-weight: 700;
     line-height: 49px;
   }
-  .mini-game__title {
+  .mini-games__title {
     padding-top: 49px;
     margin-bottom: 48px;
   }
-  .mini-game-block {
+  .mini-games__block {
     gap: 24px;
   }
   picture img {
     width: 100%;
   }
-  .mini-game-link {
+  .mini-games__link {
     border-radius: 60px;
   }
-  .mini-game-link:nth-child(odd) .mini-game-link__position {
+  .mini-games__link:nth-child(odd) .mini-games__position {
     flex-direction: column;
   }
-  .mini-game-link__position {
+  .mini-games__position {
     flex-direction: column;
   }
-  .mini-game-description {
+  .mini-games__description {
     padding: 30px 30px;
   }
-  .mini-game-description__name-big {
+  .mini-games__name-big {
     font-size: 32px;
     line-height: 39px;
     margin-bottom: 16px;
   }
-  .mini-game-description__text {
+  .mini-games__text {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 32px;
     max-width: 275px;
   }
-  .mini-game-description__but {
+  .mini-games__but {
     width: 100%;
   }
   footer {
