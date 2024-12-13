@@ -21,7 +21,7 @@
         <h2 class="title">Об играх</h2>
         <p class="about__text text">В моей коллекции представлено 6 игр на разные темы. Игры&nbsp;несложные — в них может поиграть каждый. Все&nbsp;игры&nbsp;доступны для пользования.</p>
         <div class="about__games">
-            <a class="about-game" href="#">
+            <a class="about-game" href="#guessNumber">
                 <article>
                     <img src="./img/game1.png" alt="Угадай число">
                     <div class="about-game-description">
@@ -80,7 +80,8 @@
     <div class="wrapper mini-games">
         <h2 class="mini-games__title title">Мини-игры</h2>
         <div class="mini-games__block">
-            <a class="mini-games__link" href="#">
+            <div class="mini-games__link">
+                <a id="guessNumber"></a>
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game1.png">
@@ -89,11 +90,11 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Угадай число</h3>
                         <p class="mini-games__text">Попробуй угадать случайное число&nbsp;от 1 до 100.</p>
-                        <span class="but">Играть!</span>
+                        <button onclick="guessNumber()" class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
-            </a>
-            <a class="mini-games__link" href="#">
+            </div>
+            <div class="mini-games__link" href="#">
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game2.png">
@@ -102,24 +103,24 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Простая <br>арифметика</h3>
                         <p class="mini-games__text">Попробуй решить простые арифметические задачи.</p>
-                        <span class="but">Играть!</span>
+                        <button class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
-            </a>
-            <a class="mini-games__link" href="#">
+            </div>
+            <div class="mini-games__link" href="#">
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game3.png">
                         <img src="./img/mini-game3.png" alt="Переверни текст">
                     </picture>
                     <div class="mini-games__description">
-                        <h3 class="mini-game__name-big">Переверни текст</h3>
+                        <h3 class="mini-games__name-big">Переверни текст</h3>
                         <p class="mini-games__text">Попробуй ввести текст, который будет&nbsp;перевернут.</p>
-                        <span class="but">Играть!</span>
+                        <button class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
-            </a>
-            <a class="mini-games__link" href="#">
+            </div>
+            <div class="mini-games__link" href="#">
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game5.png">
@@ -128,11 +129,11 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Викторина</h3>
                         <p class="mini-games__text">Отвечай на вопросы викторины с&nbsp;вариантами ответов.</p>
-                        <span class="but">Играть!</span>
+                        <button class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
-            </a>
-            <a class="mini-games__link" href="#">
+            </div>
+            <div class="mini-games__link" href="#">
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game4.png">
@@ -141,11 +142,11 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Камень, <br>ножницы, <br>бумага</h3>
                         <p class="mini-games__text">Сыграй в популярную игру против компьютера.</p>
-                        <span class="but">Играть!</span>
+                        <button class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
-            </a>
-            <a class="mini-games__link" href="#">
+            </div>
+            <div class="mini-games__link" href="#">
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game6.png">
@@ -154,14 +155,15 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Генератор <br>случайных <br>цветов</h3>
                         <p class="mini-games__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                        <span class="but">Играть!</span>
+                        <button class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
-            </a>
+            </div>
         </div>
     </div>
     <footer>
         <p>Все права защищены.</p>
     </footer>
+    <script src="guessNumber.js"></script>
 </body>
 </html>
