@@ -1,13 +1,4 @@
-const { task, answer } = generateTask(); 
-const isCorrect = checkAnswer(task, answer);
-
-if (isCorrect) {
-    alert('Правильно!');
-} else {
-    alert(`Неправильно! Правильный ответ: ${answer}`);
-}
-
-function generateTask() {
+function simpleArithmetic() {
     const operations = ['+', '-', '*', '/']; 
     const operation = operations[Math.floor(Math.random() * operations.length)]; 
 
@@ -41,4 +32,13 @@ function generateTask() {
 function checkAnswer(task, correctAnswer) {
     const userAnswer = prompt(`Решите задачу: ${task}`); 
     return userAnswer == correctAnswer; 
+}
+
+const { task, answer } = simpleArithmetic(); 
+const isCorrect = checkAnswer(task, answer);
+
+if (isCorrect) {
+    alert('Правильно!');
+} else {
+    alert(`Неправильно! Правильный ответ: ${answer}`);
 }
