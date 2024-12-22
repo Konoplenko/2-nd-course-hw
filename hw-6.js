@@ -12,17 +12,7 @@ for (let i = 0; i < array.length; i++) {
 // Задание 2
 
 const array = [1, 5, 4, 10, 0, 3];
-const valueToFind = 4;
-let index = -1;
-
-for (let i = 0; i < array.length; i++) {
-    if (array[i] === valueToFind) {
-        index = i; 
-        break; 
-    }
-}
-
-console.log(index);
+console.log(array.indexOf(4));
 
 // Задание 3
 
