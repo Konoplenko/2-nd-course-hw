@@ -39,7 +39,7 @@
                     </div>
                 </article>
             </a>
-            <a class="about-game" href="#">
+            <a class="about-game" href="#turnTheTextOver">
                 <article>
                     <img src="./img/game3.png" alt="Переверни текст">
                     <div class="about-game-description">
@@ -57,7 +57,7 @@
                     </div>
                 </article>
             </a>
-            <a class="about-game" href="#">
+            <a class="about-game" href="#quiz">
                 <article>
                     <img src="./img/game5.png" alt="Простая викторина">
                     <div class="about-game-description">
@@ -108,7 +108,8 @@
                     </div>
                 </article>
             </div>
-            <div class="mini-games__link" href="#">
+            <div class="mini-games__link">
+                <a id="turnTheTextOver"></a>
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game3.png">
@@ -117,11 +118,12 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Переверни текст</h3>
                         <p class="mini-games__text">Попробуй ввести текст, который будет&nbsp;перевернут.</p>
-                        <button class="mini-games__but but">Играть!</button>
+                        <button onclick="askUser()" class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
             </div>
-            <div class="mini-games__link" href="#">
+            <div class="mini-games__link">
+                <a id="quiz"></a>
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game5.png">
@@ -130,11 +132,11 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Викторина</h3>
                         <p class="mini-games__text">Отвечай на вопросы викторины с&nbsp;вариантами ответов.</p>
-                        <button class="mini-games__but but">Играть!</button>
+                        <button onclick="startQuiz()" class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
             </div>
-            <div class="mini-games__link" href="#">
+            <div class="mini-games__link">
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game4.png">
@@ -147,7 +149,7 @@
                     </div>
                 </article>
             </div>
-            <div class="mini-games__link" href="#">
+            <div class="mini-games__link">
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game6.png">
@@ -167,5 +169,7 @@
     </footer>
     <script src="guessNumber.js"></script>
     <script src="simpleArithmetic.js"></script>
+    <script src="turnTheTextOver.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
