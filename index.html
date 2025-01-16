@@ -48,7 +48,7 @@
                     </div>
                 </article>
             </a>
-            <a class="about-game" href="#">
+            <a class="about-game" href="#rockPaperScissors">
                 <article>
                     <img src="./img/game4.png" alt="Камень, ножницы, бумага">
                     <div class="about-game-description">
@@ -137,6 +137,7 @@
                 </article>
             </div>
             <div class="mini-games__link">
+                <a id="rockPaperScissors"></a>
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game4.png">
@@ -145,7 +146,7 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Камень, <br>ножницы, <br>бумага</h3>
                         <p class="mini-games__text">Сыграй в популярную игру против компьютера.</p>
-                        <button class="mini-games__but but">Играть!</button>
+                        <button onclick="rockPaperScissors()" class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
             </div>
@@ -171,5 +172,6 @@
     <script src="simpleArithmetic.js"></script>
     <script src="turnTheTextOver.js"></script>
     <script src="quiz.js"></script>
+    <script src="rockPaperScissors.js"></script>
 </body>
 </html>
