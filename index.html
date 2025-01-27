@@ -66,7 +66,7 @@
                     </div>
                 </article>
             </a>
-            <a class="about-game" href="#">
+            <a class="about-game" href="#randomColor">
                 <article>
                     <img src="./img/game6.png" alt="Генератор случайных цветов">
                     <div class="about-game-description">
@@ -151,6 +151,7 @@
                 </article>
             </div>
             <div class="mini-games__link">
+                <a id="randomColor"></a>
                 <article class="mini-games__position">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./img/mob.mini-game6.png">
@@ -159,7 +160,7 @@
                     <div class="mini-games__description">
                         <h3 class="mini-games__name-big">Генератор <br>случайных <br>цветов</h3>
                         <p class="mini-games__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                        <button class="mini-games__but but">Играть!</button>
+                        <button onclick="changeBackgroundColor()" class="mini-games__but but">Играть!</button>
                     </div>
                 </article>
             </div>
@@ -173,5 +174,6 @@
     <script src="turnTheTextOver.js"></script>
     <script src="quiz.js"></script>
     <script src="rockPaperScissors.js"></script>
+    <script src="randomColor.js"></script>
 </body>
 </html>
