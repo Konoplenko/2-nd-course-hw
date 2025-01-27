@@ -17,16 +17,11 @@
     <button id="toggleButton">Скрыть</button>
 
     <script>
-        const mainHeaders = document.querySelector('#mainHeader');
+        const mainHeaders = document.querySelector('#mainHeaders');
         const toggleButton = document.querySelector('#toggleButton');
         toggleButton.addEventListener('click', function () {
-            if (mainHeaders.classList.contains('hidden')) {
-                mainHeaders.classList.remove('hidden');
-                toggleButton.textContent = 'Скрыть';
-            } else {
-                mainHeaders.classList.add('hidden');
-                toggleButton.textContent = 'Показать';
-            }
+            mainHeaders.classList.toggle('hidden');
+            toggleButton.textContent = mainHeaders.classList.contains('hidden') ? 'Показать' : 'Скрыть';
         });
     </script>
 
@@ -101,16 +96,16 @@
     <script>
         const removeButton = document.querySelector('#removeButton');
 
-        removeButton.addEventListener('click', function() {
+        removeButton.addEventListener('click', function () {
             const firstDescriptionElement = document.querySelector('.descrip');
-            
+
             if (firstDescriptionElement) {
                 firstDescriptionElement.remove();
             } else {
                 alert('Элементы с классом description отсутствуют!');
             }
         });
-    </script>    
+    </script>
 </body>
 
 </html>
