@@ -11,6 +11,7 @@ body {
 header {
     height: 800px;
     background: rgb(225, 255, 143);
+    position: relative;
 }
 
 .heading {
@@ -140,6 +141,51 @@ a{
     line-height: 39px;
     color: black;
     margin-top: 16px;
+}
+
+.scroll-container {
+    font-weight: 600;
+    width: 100vn;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgba(188, 236, 48, 1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+}
+
+.scroll-content {
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollAnimation 20s linear infinite;
+    line-height: 80px;
+}
+
+.scroll-item {
+    display: inline-block;
+    margin: 0 20px; 
+    background: rgba(188, 236, 48, 1);
+    color: rgba(32, 32, 39, 1); 
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.scroll-content img {
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .mini-games{
