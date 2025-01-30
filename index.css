@@ -116,11 +116,11 @@ a {
   transform: scale(1.05);
 }
 
-.about-game-description {
+.about-game__description {
   padding: 32px 32px 36px 32px;
 }
 
-.about-game-description__number {
+.about-game__number {
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
   width: 108px;
@@ -135,7 +135,7 @@ a {
   justify-content: center;
 }
 
-.about-game-description__name {
+.about-game__name {
   font-size: 32px;
   font-weight: 700;
   line-height: 39px;
@@ -145,13 +145,13 @@ a {
 
 .scroll-container {
   font-weight: 600;
-  width: 100vn;
   overflow: hidden;
   white-space: nowrap;
   background: rgb(188, 236, 48);
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   padding: 0;
 }
 
@@ -205,16 +205,17 @@ a {
   display: grid;
 }
 
-.mini-games__link {
+.mini-game {
   border-radius: 30px;
   background-color: white;
 }
 
-.mini-games__position {
+.game__content {
   display: flex;
+  height: 500px;
 }
 
-.mini-games__link:nth-child(odd) .mini-games__position {
+.game:nth-child(odd) .game__content {
   flex-direction: row-reverse;
 }
 
@@ -223,12 +224,12 @@ picture img {
   width: 100%;
 }
 
-.mini-games__description {
+.game__description {
   padding: 48px 48px;
   flex-grow: 1;
 }
 
-.mini-games__name-big {
+.game__title {
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
@@ -236,7 +237,7 @@ picture img {
   margin-bottom: 24px;
 }
 
-.mini-games__text {
+.game__text {
   text-decoration: none;
   font-size: 24px;
   font-weight: 400;
@@ -326,30 +327,31 @@ footer {
   picture img {
     width: 100%;
   }
-  .mini-games__link {
+  .game {
     border-radius: 60px;
   }
-  .mini-games__link:nth-child(odd) .mini-games__position {
+  .game:nth-child(odd) .game__content {
     flex-direction: column;
   }
-  .mini-games__position {
+  .game__content {
     flex-direction: column;
+    height: unset;
   }
-  .mini-games__description {
+  .game__description {
     padding: 30px 30px;
   }
-  .mini-games__name-big {
+  .game__title {
     font-size: 32px;
     line-height: 39px;
     margin-bottom: 16px;
   }
-  .mini-games__text {
+  .game__text {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 32px;
     max-width: 275px;
   }
-  .mini-games__but {
+  .game__but {
     width: 100%;
   }
   footer {

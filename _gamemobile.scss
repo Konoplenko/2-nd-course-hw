@@ -74,36 +74,37 @@
         width: 100%;
     }
 
-    .mini-games__link {
+    .game {
         border-radius: 60px;
     }  
 
-    .mini-games__link:nth-child(odd) .mini-games__position {
+    .game:nth-child(odd) .game__content {
         flex-direction: column;
     }
 
-    .mini-games__position{
+    .game__content{
         flex-direction: column;
+        height: unset;
     }
 
-    .mini-games__description{
+    .game__description{
         padding: 30px 30px;
     }
 
-    .mini-games__name-big {
+    .game__title {
         font-size: 32px;
         line-height: 39px;
         margin-bottom: 16px;
     }
 
-    .mini-games__text{
+    .game__text{
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 32px;
         max-width: 275px;
     }
 
-    .mini-games__but {
+    .game__but {
         width: 100%;
     }
 
