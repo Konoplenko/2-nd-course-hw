@@ -11,6 +11,7 @@ body {
 header {
     height: 800px;
     background: rgb(225, 255, 143);
+    position: relative;
 }
 
 .heading {
@@ -115,11 +116,11 @@ a{
     transform: scale(1.05);
 }
 
-.about-game-description{
+.about-game__description{
     padding: 32px 32px 36px 32px;
 }
 
-.about-game-description__number{
+.about-game__number{
     border-radius: 52.58px;
     background: rgb(247, 247, 247);
     width: 108px;
@@ -134,12 +135,57 @@ a{
     justify-content: center;
 }
 
-.about-game-description__name{
+.about-game__name{
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
     color: black;
     margin-top: 16px;
+}
+
+.scroll-container {
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgba(188, 236, 48, 1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
+.scroll-content {
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollAnimation 20s linear infinite;
+    line-height: 80px;
+}
+
+.scroll-item {
+    display: inline-block;
+    margin: 0 20px; 
+    background: rgba(188, 236, 48, 1);
+    color: rgba(32, 32, 39, 1); 
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.scroll-content img {
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .mini-games{
@@ -160,15 +206,16 @@ a{
     display: grid;
 }	
 
-.mini-games__link{
+.game{
     border-radius: 30px;
     background-color: white; 
 }
-.mini-games__position{
+.game__content{
     display: flex;
+    height: 500px;
 }
 
-.mini-games__link:nth-child(odd) .mini-games__position{
+.game:nth-child(odd) .game__content{
     flex-direction: row-reverse;
 }
 
@@ -177,12 +224,12 @@ picture img {
     width: 100%;
 }
 
-.mini-games__description{
+.game__description{
     padding: 48px 48px;
     flex-grow: 1;
 }
 
-.mini-games__name-big {
+.game__title {
     font-size: 48px;
     font-weight: 700;
     line-height: 59px;
@@ -190,7 +237,7 @@ picture img {
     margin-bottom: 24px;
 }
 
-.mini-games__text{
+.game__text{
     text-decoration: none;
     font-size: 24px;
     font-weight: 400;
